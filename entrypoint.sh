@@ -2,6 +2,9 @@
 
 set -oeux pipefail
 
+# For reproducibility.
+export SOURCE_DATE_EPOCH=1760000000
+
 # Import GPG key to sign with
 if [ ! -z "${INPUT_GPG_KEY_DATA-}" ]; then
     if [ -z "${INPUT_GPG_KEY_ID-}" ]; then
