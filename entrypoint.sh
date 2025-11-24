@@ -23,7 +23,7 @@ fi
 # repo directory
 mkdir repo
 
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 export MAKEFLAGS=-j$(nproc)
 
 # Build all PKGBUILDs in any folder inside of ./pkgs/
